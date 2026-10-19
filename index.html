@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fichas Técnicas CG 2026</title>
+  <meta name="description" content="Catálogo interactivo de las 52 fichas técnicas de indicadores de desempeño y compromisos de mejora de los Convenios de Gestión 2026 (Anexo I, MINSA).">
+  <meta name="theme-color" content="#0E4D5C">
+  <meta name="color-scheme" content="light dark">
+
+  <!-- Las URL absolutas se ajustan con: python3 tools/configurar_url.py --url https://USUARIO.github.io/REPO/ -->
+  <link rel="canonical" href="https://jylmdev-cyber.github.io/fichas-cg-2026/" data-site-url>
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:title" content="Fichas Técnicas · Convenios de Gestión 2026">
+  <meta property="og:description" content="52 fichas de indicadores de desempeño y compromisos de mejora (Anexo I, MINSA). Búsqueda, filtros, enlace y QR por ficha.">
+  <meta property="og:url" content="https://jylmdev-cyber.github.io/fichas-cg-2026/" data-site-url>
+  <meta property="og:image" content="https://jylmdev-cyber.github.io/fichas-cg-2026/assets/img/og-image.png" data-site-url="assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/icon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="assets/img/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("fichas-tema");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#app" data-skip>Saltar al contenido</a>
+
+  <header class="topbar">
+    <div class="wrap topbar-in">
+      <a class="brand" href="#/" aria-label="Inicio del catálogo">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="7" fill="currentColor"/><path d="M10 9h9l4 4v10a1 1 0 0 1-1 1H10a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1Z" fill="none" stroke="var(--brand-ink)" stroke-width="1.8" stroke-linejoin="round"/><path d="m12.5 17.5 2.4 2.4 4.6-5" fill="none" stroke="var(--sand)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="brand-txt"><strong>Fichas CG 2026</strong><small>Convenios de Gestión · MINSA</small></span>
+      </a>
+      <nav class="mainnav" aria-label="Principal">
+        <a href="#/" data-nav="catalogo">Catálogo</a>
+        <a href="#/guia" data-nav="guia">Guía y descargas</a>
+      </nav>
+      <div class="top-actions">
+        <button type="button" class="btn btn-ghost-inv" data-action="share" aria-haspopup="dialog">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M14 14h3v3h-3zM18 18h3v3h-3zM14 19h2M19 14h2" stroke="currentColor" stroke-width="1.8" fill="none"/></svg>
+          <span>Compartir</span>
+        </button>
+        <button type="button" class="icon-btn" data-action="theme" aria-label="Cambiar tema claro u oscuro">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="app" class="wrap" tabindex="-1">
+    <noscript><p class="empty">Este catálogo necesita JavaScript. Puedes descargar los datos en <a href="data/fichas.csv">CSV</a> o el <a href="docs/anexo-i-fichas-tecnicas-cg-2026.pdf">documento original (PDF)</a>.</p></noscript>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap foot-in">
+      <p><strong>Fuente:</strong> MINSA, <em>Anexo I: Listado de indicadores de desempeño (ID), compromisos de mejora de los servicios (CM) y fichas técnicas del Año 2026</em>, diciembre 2025. Ante cualquier diferencia prevalece el documento oficial.</p>
+      <p>Catálogo publicado por la OITE · Red de Salud San Miguel – DIRESA Cajamarca. <span data-generado></span></p>
+    </div>
+  </footer>
+
+  <dialog class="modal" id="share-dialog" aria-labelledby="share-title">
+    <form method="dialog" class="modal-in">
+      <header class="modal-head">
+        <div>
+          <h2 id="share-title">Compartir</h2>
+          <p class="modal-sub" data-share-sub></p>
+        </div>
+        <button class="icon-btn" value="close" aria-label="Cerrar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </header>
+      <div class="qr-box" data-share-qr></div>
+      <p class="warn" data-share-local hidden>Estás viendo una copia local. El QR funcionará para otras personas cuando el sitio esté publicado en GitHub Pages.</p>
+      <label class="field-lbl" for="share-url">Enlace</label>
+      <div class="copy-row">
+        <input id="share-url" type="text" readonly data-share-url>
+        <button type="button" class="btn btn-primary" data-action="copy">Copiar</button>
+      </div>
+      <div class="share-btns">
+        <button type="button" class="btn btn-soft" data-action="qr-png">Descargar QR (PNG)</button>
+        <a class="btn btn-soft" data-share-wa target="_blank" rel="noopener">WhatsApp</a>
+        <button type="button" class="btn btn-soft" data-action="native-share" hidden>Más opciones…</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+
+  <script src="assets/js/vendor/qrcode.js"></script>
+  <script src="data/fichas.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

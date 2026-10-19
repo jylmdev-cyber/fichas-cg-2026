@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página no encontrada</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <style>
+    :root { --bg: #F4F7F7; --ink: #15282D; --muted: #536a70; --accent: #0E4D5C; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #0A171B; --ink: #E3EDEE; --muted: #9DB4B8; --accent: #7FD3C7; } }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: var(--bg); color: var(--ink); font: 16px/1.55 "Segoe UI", system-ui, Roboto, Arial, sans-serif; padding: 16px; text-align: center; }
+    h1 { font-family: Cambria, Georgia, serif; margin: 0 0 8px; }
+    p { color: var(--muted); }
+    a { display: inline-block; margin-top: 8px; background: #0E4D5C; color: #fff; padding: 10px 18px; border-radius: 10px; text-decoration: none; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Página no encontrada</h1>
+    <p>La dirección no existe en el catálogo de fichas técnicas CG 2026.</p>
+    <a id="home" href="./">Ir al catálogo</a>
+  </main>
+  <script>
+    // En GitHub Pages de proyecto, el inicio es /<repositorio>/.
+    (function () {
+      var seg = location.pathname.split("/").filter(Boolean);
+      if (location.hostname.slice(-10) === ".github.io" && seg.length) document.getElementById("home").href = "/" + seg[0] + "/";
+    })();
+  </script>
+</body>
+</html>
